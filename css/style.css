@@ -12,7 +12,10 @@ ul,
 ol {
   list-style: none;
 }
-
+.container{
+  max-width: 1200px;
+  margin: 0 auto;
+}
 /* Header */
 
 header .header-top {
@@ -22,8 +25,8 @@ header .header-top {
 header .header-top .header-top--content,
 header .header-bottom .header-bottom--content,
 footer .footer-top,
-footer .footer-bottom .footer-bottom--content {
-  max-width: 1320px;
+footer .footer-bottom .footer-bottom--content{
+  max-width: 1200px;
   margin: 0 auto;
 }
 
