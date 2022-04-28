@@ -22,12 +22,12 @@ header .header-top {
 header .header-top .header-top--content,
 header .header-bottom .header-bottom--content,
 footer .footer-top,
-footer .footer-bottom .footer-bottom--content{
+footer .footer-bottom .footer-bottom--content {
   max-width: 1320px;
   margin: 0 auto;
 }
 
-header .header-top .header-top--content{
+header .header-top .header-top--content {
   display: flex;
   justify-content: space-between;
 }
@@ -45,7 +45,7 @@ header .header-bottom {
   background-color: red;
 }
 
-header .header-bottom .header-bottom--menu{
+header .header-bottom .header-bottom--menu {
   font-weight: bold;
   color: #ffffff;
   text-transform: uppercase;
@@ -54,11 +54,11 @@ header .header-bottom .header-bottom--menu{
   align-items: center;
 }
 
-header .header-bottom .header-bottom--menu .menu-item{
+header .header-bottom .header-bottom--menu .menu-item {
   padding: 15px 25px;
 }
 
-header .header-bottom .header-bottom--menu .menu-item.active{
+header .header-bottom .header-bottom--menu .menu-item.active {
   background-color: brown;
 }
 
@@ -73,18 +73,18 @@ footer .footer-top {
   padding-top: 80px;
 }
 
-footer .footer-top--form{
+footer .footer-top--form {
   max-width: 30%;
   background-color: gray;
   padding: 10px;
   margin-bottom: 20px;
 }
 
-footer .footer-top--form .form-label{
+footer .footer-top--form .form-label {
   margin-bottom: 10px;
 }
 
-footer .footer-top--form .form-input{
+footer .footer-top--form .form-input {
   height: 40px;
   width: 70%;
   padding-left: 40px;
@@ -111,7 +111,7 @@ footer .footer-top--form .form-button {
 
 footer .footer-top--content {
   display: flex;
-  justify-content:space-between;
+  justify-content: space-between;
   padding-bottom: 60px;
 }
 
@@ -143,8 +143,213 @@ footer .footer-bottom {
   border-top: 1px solid white;
 }
 
-footer .footer-bottom .footer-bottom--content{
+footer .footer-bottom .footer-bottom--content {
   display: flex;
   justify-content: space-between;
   padding: 20px 22%;
+}
+
+/* Baiviet */
+.page-body {
+  max-width: 1160px;
+  display: flex;
+  margin: 0 auto;
+}
+
+.page-body .page-body--blog {
+  padding-right: 20px;
+  max-width: 800px;
+}
+
+.page-body .page-body--blog .blog-breadcrumb {
+  display: flex;
+}
+
+.blog-breadcrumb--item {
+  background: #ffffff;
+  color: #CC171E;
+  display: block;
+  font-weight: bold;
+  font-size: 13px;
+  text-align: center;
+  height: 24px;
+  text-decoration: none;
+  padding: 5px;
+  padding-left: 20px;
+  margin: 0 5px 0 0;
+  position: relative;
+}
+
+.blog-breadcrumb--item:first-child {
+  background: #CC171E;
+  color: #ffffff;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  padding-left: 5px;
+}
+
+.blog-breadcrumb--item:first-child::before {
+  display: none;
+}
+
+.blog-breadcrumb--item:last-child {
+  padding-right: 20px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.blog-breadcrumb--item:last-child::after {
+  display: none;
+}
+
+.blog-breadcrumb--item::after {
+  content: "";
+  border-top: 12px solid transparent;
+  border-bottom: 12px solid transparent;
+  border-left: 15px solid #CC171E;
+  position: absolute;
+  right: -15px;
+  top: 0;
+  z-index: 1;
+}
+
+.blog-breadcrumb--item::before {
+  content: "";
+  border-top: 12px solid transparent;
+  border-bottom: 12px solid transparent;
+  border-left: 15px solid #fff;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.page-body .page-body--blog .blog-title{
+  font-size: 36px;
+  line-height: 37px;
+  font-weight: bold;
+  padding: 20px 0;
+}
+
+.page-body .page-body--blog .blog-thumbnail,
+.page-body .page-body--blog .blog-image__center {
+  width: 100%;
+}
+
+.page-body .page-body--blog .blog-content {
+  color: #656666;
+  font-size: 17.5px;
+  line-height: 23px;
+  letter-spacing: 0px;
+}
+
+.page-body .page-body--blog .blog-list__red ,
+.page-body .page-body--blog .blog-list__blue {
+  list-style-type:square;
+  font-size: 18px;
+  line-height: 23px;
+  padding: 15px 0 15px 20px;
+}
+
+.page-body .page-body--blog .blog-list__red{
+
+  color: #CC171E;
+}
+
+.page-body .page-body--blog .blog-list__blue{
+  color: #5B80A3;
+}
+
+.page-body .page-body--blog .blog-image{
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 0;
+}
+
+.page-body .page-body--blog .blog-image .blog-image__left,
+.page-body .page-body--blog .blog-image .blog-image__right {
+  flex: 1;
+}
+
+.page-body .page-body--blog .blog-image img:first-child {
+  padding-right: 10px;
+}
+
+.page-body .page-body--blog .blog-list__blue .list-item--date {
+  color: #969696;
+  font-size: 13.67px;
+  line-height: 17.47px;
+}
+
+.page-body .page-body--adv .adv-image:first-child{
+  margin-top: 35px;
+}
+
+.page-body .page-body--adv .adv-image{
+  margin-bottom: 35px;
+}
+
+.page-body .blog-same-content {
+  padding: 20px 0;
+}
+
+.page-body .blog-same-content .same-content--header{
+  display: flex;
+  justify-content: space-between;
+}
+
+.same-content--header .header-title{
+  font-size: 18.29px;
+  font-weight: bold;
+  line-height: 21.94px;
+  height: 21.94px;
+  padding-left: 10px;
+  border-left: 6px solid #CC171E;
+}
+
+.same-content--header .header-filter .filter-form{
+  display: flex;
+}
+
+.same-content--header .header-filter .filter-form .filter-form--label{
+  color: #8C8C8C;
+  font-size: 13.19px;
+  line-height: 15.83px;
+  font-weight: lighter;
+  padding-right: 12px;
+}
+
+.same-content--header .header-filter .filter-form select {
+  padding-right: 12px;
+}
+
+.same-content--header .header-filter .filter-form .filter-form--day{
+  width: 47px;
+  height: 18px;
+}
+
+.same-content--header .header-filter .filter-form .filter-form--month{
+  width: 86px;
+  height: 18px;
+}
+
+.same-content--header .header-filter .filter-form .filter-form--year{
+  width: 65px;
+  height: 18px;
+}
+
+.same-content--header .header-filter .filter-form .filter-form--button{
+  background-color: #CC171E;
+  color: #ffffff;
+  font-size: 13.8px;
+  font-weight: bold;
+  padding: 2px 12px;
+}
+
+.same-content--list {
+  display: grid;
+  grid-template-columns: repeat(3, 200px);
+}
+
+.same-content--list .list-item .list-item--thumbnail {
+  max-width: 200px;
 }
