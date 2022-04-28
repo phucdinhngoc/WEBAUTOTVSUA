@@ -1,0 +1,281 @@
+<section class="home-section">
+  <div class="banner-section">
+      <div class="slideshow-container">
+          <div class="mySlides fade" style="background-image: url('/images/home-slider-1.png');">
+              <div class="content">
+                  <div class="title">Sẽ Là Một Tiêu Đề To To Gì Đó Nằm Ở Đây 1</div>
+                  <div class="text">Tiếp theo đây là 1 câu gì đó diễn tả thêm cho tiêu đề. Câu gì đó ngắn gọn, nhưng
+                      mà câu dài cũng được.</div>
+                  <div class="view-more"><a href="#">Tìm hiểu thêm</a></div>
+              </div>
+          </div>
+          <div class="mySlides fade" style="background-image: url('/images/home-slider-1.png');">
+              <div class="content">
+                  <div class="title">Sẽ Là Một Tiêu Đề To To Gì Đó Nằm Ở Đây 2</div>
+                  <div class="text">Tiếp theo đây là 1 câu gì đó diễn tả thêm cho tiêu đề. Câu gì đó ngắn gọn, nhưng
+                      mà câu dài cũng được.</div>
+                  <div class="view-more"><a href="#">Tìm hiểu thêm</a></div>
+              </div>
+          </div>
+          <div class="mySlides fade" style="background-image: url('/images/home-slider-1.png');">
+              <div class="content">
+                  <div class="title">Sẽ Là Một Tiêu Đề To To Gì Đó Nằm Ở Đây 3</div>
+                  <div class="text">Tiếp theo đây là 1 câu gì đó diễn tả thêm cho tiêu đề. Câu gì đó ngắn gọn, nhưng
+                      mà câu dài cũng được.</div>
+                  <div class="view-more"><a href="#">Tìm hiểu thêm</a></div>
+              </div>
+          </div>
+          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      </div>
+      <div style="text-align:center" class="dot-wrapper">
+          <span class="dot" onclick="currentSlide(1)"></span>
+          <span class="dot" onclick="currentSlide(2)"></span>
+          <span class="dot" onclick="currentSlide(3)"></span>
+      </div>
+      <script>
+          var slideIndex = 1; 
+          showSlides(slideIndex); 
+          function plusSlides(n) { 
+              showSlides(slideIndex += n); 
+          } 
+          function currentSlide(n) { 
+              showSlides(slideIndex = n); 
+          } 
+          function showSlides(n) { 
+              var i; 
+              var slides = document.getElementsByClassName("mySlides"); 
+              var dots = document.getElementsByClassName("dot"); 
+              if (n > slides.length) { 
+                  slideIndex = 1 
+              } 
+              if (n < 1) {
+                  slideIndex = slides.length 
+              } 
+              for (i = 0; i < slides.length; i++) {
+                  slides[i].style.display = "none"; 
+              } 
+              for (i = 0; i < dots.length; i++) { 
+                  dots[i].className = dots[i].className.replace(" active", ""); 
+              } 
+              slides[slideIndex - 1].style.display = "block"; 
+              dots[slideIndex - 1].className += " active"; 
+          }
+      </script>
+  </div>
+  <div class="content-container">
+      <div class="content-title">TIN NỔI BẬT</div>
+      <div class="hot-news-container">
+          <div class="nav-button pre">&#8826</div>
+          <div class="nav-button next">&#8827</div>
+          <div class="hot-news-carousel">
+              <div> 
+                  <div class="news-card">
+                      <div class="news-content">
+                          <div class="news-title">Tiêu đề</div>
+                          <div class="news-quote">GetJob có thể giúp bạn tăng cường nhân sự ngay lập tức để đáp ứng các mục tiêu kinh doanh của bạn…</div>
+                      </div>
+                          <div class="news-images">
+                              <img src="/images/hot-news-1.png">
+                          </div>
+                  </div>
+              </div>
+              <div> 
+                  <div class="news-card">
+                      <div class="news-content">
+                          <div class="news-title">Tiêu đề</div>
+                          <div class="news-quote">GetJob có thể giúp bạn tăng cường nhân sự ngay lập tức để đáp ứng các mục tiêu kinh doanh của bạn…</div>
+                      </div>
+                          <div class="news-images">
+                              <img src="/images/hot-news-1.png">
+                          </div>
+                  </div>
+              </div>
+              <div> 
+                  <div class="news-card">
+                      <div class="news-content">
+                          <div class="news-title">Tiêu đề</div>
+                          <div class="news-quote">GetJob có thể giúp bạn tăng cường nhân sự ngay lập tức để đáp ứng các mục tiêu kinh doanh của bạn…</div>
+                      </div>
+                          <div class="news-images">
+                              <img src="/images/hot-news-1.png">
+                          </div>
+                  </div>
+              </div>
+              <div> 
+                  <div class="news-card">
+                      <div class="news-content">
+                          <div class="news-title">Tiêu đề</div>
+                          <div class="news-quote">GetJob có thể giúp bạn tăng cường nhân sự ngay lập tức để đáp ứng các mục tiêu kinh doanh của bạn…</div>
+                      </div>
+                          <div class="news-images">
+                              <img src="/images/hot-news-1.png">
+                          </div>
+                  </div>
+              </div>
+            </div>
+            <script>
+                  $(document).ready(function(){
+                      $(".hot-news-carousel").owlCarousel({
+                          loop:true,
+                          nav:false,
+                          responsive : {
+                              // breakpoint from 0 up
+                              0 : {
+                                      items:1
+                              },
+                              // breakpoint from 480 up
+                              768 : {
+                                      items:2
+                              },
+                              // breakpoint from 768 up
+                              1024 : {
+                                      items:3
+                              }
+                          }
+                      });
+                      $('.hot-news-container .pre').click(function() {
+                          $(".hot-news-carousel").trigger('prev.owl.carousel');
+                      })
+                      $('.hot-news-container .next').click(function() {
+                          $(".hot-news-carousel").trigger('next.owl.carousel');
+                      })
+                  });
+            </script>
+      </div>
+      <div class="content-title">CÂU CHUYỆN CỦA GETJOB</div>
+      <div class="getjob-story-container">
+          <div class="nav-button pre">&#8826</div>
+          <div class="nav-button next">&#8827</div>
+          <div class="getjob-story-carousel">
+              <div> 
+                  <div class="story-card">
+                      <div class="story-title">
+                          <div class="title">Chia sẻ từ worker</div>
+                          <div class="story-image">
+                              <img src="/images/worker.png" alt="">
+                          </div>
+                      </div>
+                      <div class="story-content">GetJob có thể giúp bạn tăng cường nhân sự ngay lập tức để đáp ứng các mục tiêu kinh doanh của bạn. GetJob có thể giúp bạn tăng cường nhân sự ngay lập tức để đáp ứng các mục tiêu kinh doanh của bạn. GetJob có thể giúp bạn tăng cường nhân sự ngay lập tức để đáp ứng các mục tiêu kinh doanh của bạn…</div>
+                      <div class="story-signature">Anh Nguyễn Văn A</div>
+                  </div>
+              </div>
+              <div> 
+                  <div class="story-card">
+                      <div class="story-title">
+                          <div class="title">Chia sẻ từ worker</div>
+                          <div class="story-image">
+                              <img src="/images/worker.png" alt="">
+                          </div>
+                      </div>
+                      <div class="story-content">GetJob có thể giúp bạn tăng cường nhân sự ngay lập tức để đáp ứng các mục tiêu kinh doanh của bạn. GetJob có thể giúp bạn tăng cường nhân sự ngay lập tức để đáp ứng các mục tiêu kinh doanh của bạn. GetJob có thể giúp bạn tăng cường nhân sự ngay lập tức để đáp ứng các mục tiêu kinh doanh của bạn…</div>
+                      <div class="story-signature">Anh Nguyễn Văn A</div>
+                  </div>
+              </div>
+              <div> 
+                  <div class="story-card">
+                      <div class="story-title">
+                          <div class="title">Chia sẻ từ worker</div>
+                          <div class="story-image">
+                              <img src="/images/worker.png" alt="">
+                          </div>
+                      </div>
+                      <div class="story-content">GetJob có thể giúp bạn tăng cường nhân sự ngay lập tức để đáp ứng các mục tiêu kinh doanh của bạn. GetJob có thể giúp bạn tăng cường nhân sự ngay lập tức để đáp ứng các mục tiêu kinh doanh của bạn. GetJob có thể giúp bạn tăng cường nhân sự ngay lập tức để đáp ứng các mục tiêu kinh doanh của bạn…</div>
+                      <div class="story-signature">Anh Nguyễn Văn A</div>
+                  </div>
+              </div>
+              <div> 
+                  <div class="story-card">
+                      <div class="story-title">
+                          <div class="title">Chia sẻ từ worker</div>
+                          <div class="story-image">
+                              <img src="/images/worker.png" alt="">
+                          </div>
+                      </div>
+                      <div class="story-content">GetJob có thể giúp bạn tăng cường nhân sự ngay lập tức để đáp ứng các mục tiêu kinh doanh của bạn. GetJob có thể giúp bạn tăng cường nhân sự ngay lập tức để đáp ứng các mục tiêu kinh doanh của bạn. GetJob có thể giúp bạn tăng cường nhân sự ngay lập tức để đáp ứng các mục tiêu kinh doanh của bạn…</div>
+                      <div class="story-signature">Anh Nguyễn Văn A</div>
+                  </div>
+              </div>
+            </div>
+            <script>
+                  $(document).ready(function(){
+                      $(".getjob-story-carousel").owlCarousel({
+                          loop:true,
+                          nav:false,
+                          responsive : {
+                              // breakpoint from 0 up
+                              0 : {
+                                      items:1
+                              },
+                              // breakpoint from 480 up
+                              768 : {
+                                      items:2
+                              },
+                              // breakpoint from 768 up
+                              1024 : {
+                                      items:3
+                              }
+                          }
+                      });
+                      $('.getjob-story-container .pre').click(function() {
+                          $(".getjob-story-carousel").trigger('prev.owl.carousel');
+                      })
+                      $('.getjob-story-container .next').click(function() {
+                          $(".getjob-story-carousel").trigger('next.owl.carousel');
+                      })
+                  });
+            </script>
+      </div>
+  </div>
+  <div class="customer-container">
+      <div class="customer-banner">
+          <div class="register-wrapper">
+              <div class="images">
+                  <img src="/images/post1.png" alt="">
+              </div>
+              <div class="title">ĐĂNG TIN TUYỂN DỤNG</div>
+              <div class="sign-up">
+                  <a href="#">Đăng ký</a>
+              </div>
+          </div>
+          <div class="register-wrapper">
+              <div class="images">
+                  <img src="/images/post1.png" alt="">
+              </div>
+              <div class="title">ĐĂNG KÝ TÌM VIỆC</div>
+              <div class="sign-up">
+                  <a href="#">Đăng ký</a>
+              </div>
+          </div>
+      </div>
+      <div class="content-container">
+          <div class="content-title">ĐỐI TÁC</div>
+          <div class="customer-images-wrapepr">
+              <div class="image">
+                  <img src="/images/coloman-food.png" alt="">
+              </div>
+              <div class="image">
+                  <img src="/images/coloman-food.png" alt="">
+              </div>
+              <div class="image">
+                  <img src="/images/coloman-food.png" alt="">
+              </div>
+              <div class="image">
+                  <img src="/images/coloman-food.png" alt="">
+              </div>
+              <div class="image">
+                  <img src="/images/coloman-food.png" alt="">
+              </div>
+              <div class="image">
+                  <img src="/images/coloman-food.png" alt="">
+              </div>
+              <div class="image">
+                  <img src="/images/coloman-food.png" alt="">
+              </div>
+          </div>
+      </div>
+  </div>
+  <div class="download-app-container">
+      <div>Ở ĐÂY LÀ BANNER KÊU GỌI TẢI APP</div>
+  </div>
+</section>
