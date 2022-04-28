@@ -1,3 +1,6 @@
+img{
+    width: 100%;
+}
 .side-add-container{
     width: 300px;
 }
@@ -49,6 +52,9 @@
     align-items: flex-start;
     justify-content: space-between;
     margin: 50px 0;
+}
+.main-home-section .side-add{
+    width: 300px;
 }
 .main-home-section >div{
     border-right: 2px solid #b4b4b6;
@@ -131,6 +137,7 @@
 }
 .most-popular-section .vertical-news-section .side-add-container .side-add{
     margin-bottom: 20px;
+    width: 300px;
 }
 .most-popular-section .vertical-news-section .news-container{
     padding: 0 30px;
@@ -147,6 +154,7 @@
 }
 .most-popular-section .vertical-news-section .news-container .news-item .news-image{
     margin-right: 10px;
+    min-width: 200px;
 }
 .most-popular-section .vertical-news-section .news-container .news-item .news-content .news-title{
     font-weight: bold;
@@ -272,6 +280,9 @@
     display: flex;
     padding: 10px;
     padding-left: 0;
+}
+.news-video-section .section-body .news-container .news-item .news-image{
+    margin-right: 10px;
 }
 .news-video-section .section-body .news-container .news-item .news-image img{
     max-width: 150px;
@@ -431,6 +442,9 @@
     display: flex;
     justify-content: space-between;
 }
+.other-category-section .side-add{
+    width: 300px;
+}
 .other-category-section .news-container{
     padding-right: 30px;
     display: flex;
@@ -492,4 +506,108 @@
 }
 .bottom-banner img{
     max-width: 100%;
+}
+
+/*Media Rules*/
+
+@media (max-width:1230px) {
+    .container{
+        margin: 0 20px;
+    }
+    .main-home-section .side-add{
+        display: none;
+    }
+    .main-home-section >div:nth-child(2){
+        padding-right: 0;
+        border-right: none;
+    }
+}
+@media (min-width:1024px) and (max-width:1230px) {
+    .main-home-section .side-add{
+        display: none;
+    }
+}
+@media (max-width:1024px) {
+    .main-home-section .side-add{
+        display: none;
+    }
+}
+@media (max-width:768px) {
+    .main-home-section{
+        display: block;
+    }
+    .main-home-section >div{
+        border-right: none;
+    }
+    .main-home-section >div:first-child{
+        padding-left: 30px;
+    }
+    .main-home-section >div:nth-child(2){
+        padding-right: 30px;
+    }
+    .main-home-section >div:last-child{
+        display: none;
+    }
+    .main-home-section .large-news-section{
+        margin-bottom: 30px;
+    }
+    .main-home-section .small-news-section{
+        flex-direction: column;
+        margin-bottom: 20px;
+    }
+    .main-home-section .small-news-section .news-content{
+        margin-bottom: 10px;
+    }
+    .main-home-section .small-news-section .news-image{
+        max-width: unset;
+        width: 100%;
+    }
+    .most-popular-section .vertical-news-section{
+        flex-direction: column;
+    }
+    .most-popular-section .vertical-news-section .news-container{
+        margin-bottom: 30px;
+    }
+    .most-popular-section .vertical-news-section .news-container .news-item .news-content .news-title{
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box !important;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+        white-space: normal;
+    }
+    .most-popular-section .vertical-news-section .news-container .news-item .news-content .news-quote{
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box !important;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+        white-space: normal;
+    }
+    .most-popular-section .vertical-news-section .news-container .video-section .video-container{
+        flex-direction: column;
+    }
+    .news-video-section .section-body{
+        flex-direction: column;
+    }
+    .news-video-section .section-body > div{
+        width: 100%;
+    }
+    .news-video-section .section-body .news-container{
+        border-right: none;
+    }
+    .one-car-per-week-section .section-body{
+        flex-direction: column;
+    }
+    .one-car-per-week-section .side-add-container{
+        margin: 30px 0;
+        width: 100%;
+        display: flex;
+    }
+    .one-car-per-week-section .side-add{
+        margin-right: 30px;
+    }
+    .one-car-per-week-section .side-add-container .social-media-container{
+        margin-top: 0px;
+    }
 }
