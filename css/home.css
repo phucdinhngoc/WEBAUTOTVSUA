@@ -1,6 +1,27 @@
 img{
     width: 100%;
 }
+.section-pagination ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 50px 0;
+}
+.section-pagination ul li{
+    width: 32px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 5px;
+    border: 1px solid #828282;
+    color:#757575;
+}
+.section-pagination ul li.active{
+    background-color: #CC171E;
+    border: 1px solid #CC171E;
+    color: #FFFFFF;
+}
 .side-add-container{
     width: 300px;
 }
@@ -8,6 +29,11 @@ img{
     border-bottom: 2px solid #b4b4b6;
     padding-bottom: 10px;
     margin-bottom: 10px;
+}
+.large-news-section.border-top{
+    border-top: 2px solid #b4b4b6;
+    margin-top: 15px;
+    padding-top: 25px;
 }
 .large-news-section .news-title{
     font-weight: bold;
@@ -53,15 +79,60 @@ img{
     justify-content: space-between;
     margin: 50px 0;
 }
+.main-home-section .flex-news-container{
+    display: flex;
+}
+.main-home-section .flex-news-container >div{
+    width: 50%;
+    padding: 0 12px;
+}
+.main-home-section .flex-news-container >div:first-child{
+    padding-left: 0;
+}
+.main-home-section .flex-news-container >div:last-child{
+    padding-right: 0;
+}
+.main-home-section .flex-news-container .small-news-section .news-title{
+    font-weight: normal;
+}
 .main-home-section .side-add{
     width: 300px;
 }
 .main-home-section >div{
-    border-right: 2px solid #b4b4b6;
     padding: 0 30px;
 }
+.main-home-section >div:nth-child(2){
+    border-left: 2px solid #b4b4b6;
+    border-right: 2px solid #b4b4b6;
+}
+.main-home-section >div:nth-child(2).border-bottom{
+    border-bottom: 2px solid #b4b4b6;
+    box-shadow: 2px 2px 2px #231F204D;
+}
+.main-home-section >div:nth-child(2).border-bottom > .title{
+    width: 120px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    background: #CC171E;
+    color: #FFFFFF;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+}
+.main-home-section >div:nth-child(2).border-bottom > .title::before{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: -100%;
+    height: 2px;
+    width: 100%;
+    background-color: #cc171e;
+}
 .main-home-section >div:last-child{
-    border-right: none;
     padding-right: 0px;
 }
 .main-home-section >div:first-child{
@@ -93,9 +164,25 @@ img{
     font-weight: bold;
     font-size: 20px;
 }
+.main-home-section .small-news-section .news-quote{
+    margin: 10px 0;
+    border-top: 2px solid #b4b4b6;
+    padding: 10px;
+    position: relative;
+}
+.main-home-section .small-news-section .news-quote::before{
+    content: '';
+    position: absolute;
+    top: 15px;
+    left: 0px;
+    width: 6px;
+    height: 6px;
+    background-color: #CC171E;
+}
 .section-title{
     display: flex;
     align-items: center;
+    position: relative;
 }
 .section-title .red-square{
     background-color: #cc171e;
@@ -107,6 +194,14 @@ img{
     font-weight: bolder;
     font-size: 20px;
     text-transform: uppercase;
+}
+.section-title .tag{
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    color: #8C8C8C;
+    font-size: 13px;
 }
 .most-popular-section .carousel-news-section{
     border: 2px solid #b4b4b6;
@@ -146,7 +241,7 @@ img{
 .most-popular-section .vertical-news-section .news-container .news-item{
     display: flex;
     align-items: flex-start;
-    padding: 10px;
+    padding: 30px 10px;
     border-bottom: 2px solid #b4b4b6;
 }
 .most-popular-section .vertical-news-section .news-container .news-item:last-child{
@@ -549,6 +644,10 @@ img{
     }
     .main-home-section >div:nth-child(2){
         padding-right: 0px;
+        border-left: none;
+    }
+    .main-home-section >div:nth-child(2).border-bottom{
+        box-shadow: none;
     }
     .main-home-section >div:last-child{
         display: none;
@@ -668,5 +767,8 @@ img{
     }
     .most-popular-section .vertical-news-section .news-container .video-section .video-container .news-container .view-more-container .view-more-item{
         flex-direction: column;
+    }
+    .section-title .tag{
+        font-size: 8px;
     }
 }
