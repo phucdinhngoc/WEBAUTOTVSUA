@@ -5,11 +5,21 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Auto TV - Trong thế giới xe</title>
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/baiviet.css">
+  <script src="https://kit.fontawesome.com/5978e3d53d.js" crossorigin="anonymous"></script>
+  <script src="js/jquery.min.js"></script>
 </head>
 
 <body>
+  <div class="header-container header-wrapper home">
+    <script type="text/javascript">
+      $(".header-container").load("./share/header.html", function () {
+        $(".header.sub-header .sub-menu").empty()
+      });
+    </script>
+  </div>
   <div class="page-body">
     <div class="page-body--blog">
       <div class="blog-wrapper">
@@ -180,6 +190,11 @@
       <img class="adv-image" src="./resources/images/Asset4.png"></img>
       <img class="adv-image" src="./resources/images/Asset4.png"></img>
     </div>
+  </div>
+  <div class="footer-wrapper">
+    <script>
+      $(".footer-wrapper").load("./share/footer.html")
+    </script>
   </div>
 </body>
 
