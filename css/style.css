@@ -360,11 +360,13 @@ footer .footer-bottom .footer-bottom--content {
 
 .same-content--header .header-filter .filter-form .filter-form--button {
   height: 24px;
-  background-color: #cc171e;
-  color: #ffffff;
   font-size: 13.8px;
   font-weight: bold;
+  color: #ffffff;
+  background-color: #cc171e;
   padding: 2px 12px;
+  border: 0;
+  border-radius: 3px;
 }
 
 .same-content--list {
