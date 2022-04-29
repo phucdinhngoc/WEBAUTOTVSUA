@@ -2,13 +2,20 @@
   <div class="header-top">
     <div class="header-top--content">
 
-      <image class="content--logo" alt="" src="../resources/images/logo.png" ></image>
-      <image class="content--adv" alt="" src="https://picsum.photos/900/100" ></image>
+      <image class="content--logo" alt="" src="../resources/images/logo.png"></image>
+      <image class="content--adv" alt="" src="https://picsum.photos/900/100"></image>
     </div>
   </div>
   <div class="header-bottom">
     <div class="header-bottom--content">
+      <div class="hamburger-button-wrapper">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+      </div>
       <div class="header-bottom--menu">
+        <div class="close-bottom-menu">
+        </div>
         <div class="menu-item active">Tin tức</div>
         <div class="menu-item">Mỗi tuần một xe</div>
         <div class="menu-item">Lái và cảm nhận</div>
@@ -19,4 +26,19 @@
       </div>
     </div>
   </div>
+  <div class="black-bg"></div>
+  <script>
+    $(".hamburger-button-wrapper").click(function (e) {
+      e.preventDefault()
+      $("header .header-bottom .header-bottom--menu").css("right", "0px")
+      $(".black-bg").css("display", "block")
+      $("body").css("overflow", "hidden")
+    })
+    $(".close-bottom-menu").click(function (e) {
+      e.preventDefault()
+      $("header .header-bottom .header-bottom--menu").css("right", "-100%")
+      $(".black-bg").css("display", "none")
+      $("body").css("overflow", "auto")
+    })
+  </script>
 </header>
