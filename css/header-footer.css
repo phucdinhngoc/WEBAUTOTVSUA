@@ -16,9 +16,31 @@ header .header-bottom .header-bottom--menu .menu-item {
 footer .footer-top{
     width: 80%
 }
+footer .footer-top--form{
+    max-width:100%;
+}
 }
 @media (max-width: 768px) {
-    header .header-top .header-top--content .content--adv {
-        width: 500px;
-    }
+  .container{
+      width: 90%;
+      margin: 0 auto
+  }
+  footer .footer-top--form{
+      max-width: 100%;
+  }
+  footer .footer-top--content{
+      flex-direction: column;
+  }
+  footer .footer-top--content .content--col.content--col__1{
+      border-right: 0px;
+  }
+  footer .footer-top--content .content--col.content--col__2,
+  footer .footer-top--content .content--col.content--col__3{
+      padding-left: 0px;
+  }
+  .col-image{
+      display:block;
+      margin: 0 auto;
+      margin-top: 30px;
+  }
 }

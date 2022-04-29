@@ -391,7 +391,7 @@ img{
     content: '';
     position: absolute;
     bottom: 0;
-    right: -100%;
+    right: -90%;
     height: 2px;
     width: 100%;
     background-color: #cc171e;
