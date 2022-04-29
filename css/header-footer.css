@@ -1,0 +1,24 @@
+@media  (max-width: 1024px) {
+header .header-top .header-top--content{
+    display: flex;
+    justify-content: center;
+    padding: 10px 25px;
+}
+header .header-top .header-top--content .content--logo{
+    width: 23%;
+}
+header .header-top .header-top--content .content--adv{
+    width : 70%;
+}
+header .header-bottom .header-bottom--menu .menu-item {
+    padding: 15px 10px;
+}
+footer .footer-top{
+    width: 80%
+}
+}
+@media (max-width: 768px) {
+    header .header-top .header-top--content .content--adv {
+        width: 500px;
+    }
+}
