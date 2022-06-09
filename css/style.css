@@ -646,10 +646,15 @@ footer .footer-bottom .footer-bottom--content {
     display: none;
   }
 
+  header .header-bottom .header-bottom--menu .menu-item {
+    padding: 15px;
+    width: 185px;
+  }
+
   header .header-bottom .header-bottom--menu .menu-item.dropdown .dropdown-content {
     top: 0px;
     right: unset;
-    left: -172px;
+    left: -170px;
   }
 }
 
