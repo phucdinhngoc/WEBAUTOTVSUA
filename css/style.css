@@ -41,7 +41,7 @@ header .header-top .header-top--content .content--logo {
 }
 
 header .header-top .header-top--content .content--adv {
-  padding: 10px;
+  margin: 10px;
 }
 
 header .header-bottom {
@@ -499,7 +499,7 @@ footer .footer-bottom .footer-bottom--content a {
 }
 
 .blog-news .blog-news--item .item-image {
-  max-width: 275px;
+  min-width: 275px;
   margin-right: 17px;
 }
 

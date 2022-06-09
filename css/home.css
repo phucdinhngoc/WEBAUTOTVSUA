@@ -130,7 +130,6 @@ img{
     justify-content: center;
     position: relative;
     background: #CC171E;
-    color: #FFFFFF;
     font-size: 18px;
     font-weight: bold;
     text-transform: uppercase;
@@ -144,6 +143,11 @@ img{
     height: 2px;
     width: 100%;
     background-color: #cc171e;
+}
+
+.main-home-section >div:nth-child(2).border-bottom > .title a {
+    color: #FFFFFF;
+    text-decoration: none;
 }
 .main-home-section >div:last-child{
     padding-right: 0px;
@@ -179,7 +183,7 @@ img{
 }
 .main-home-section .small-news-section .news-title{
     font-weight: bold;
-    font-size: 20px;
+    font-size: 18px;
 }
 .main-home-section .small-news-section .news-title a {
     color: black;
@@ -203,6 +207,8 @@ img{
 .main-home-section .small-news-section .news-quote a {
     color: black;
     text-decoration: none;
+    font-size: 16px;
+    font-weight: 400;
 }
 .section-title{
     display: flex;
@@ -219,6 +225,11 @@ img{
     font-weight: bolder;
     font-size: 20px;
     text-transform: uppercase;
+}
+
+.section-title .title a {
+    color: black;
+    text-decoration: none;
 }
 .section-title .tag{
     position: absolute;
@@ -242,7 +253,7 @@ img{
 }
 .most-popular-section .carousel-news-section .news-item .news-title{
     font-weight: bold;
-    font-size: 20px;
+    font-size: 18px;
     padding: 0 8px;
 }
 .most-popular-section .carousel-news-section .news-item .news-title a {
@@ -285,7 +296,7 @@ img{
 }
 .most-popular-section .vertical-news-section .news-container .news-item .news-content .news-title{
     font-weight: bold;
-    font-size: 20px;
+    font-size: 18px;
     margin-bottom: 8px;
 }
 .most-popular-section .vertical-news-section .news-container .news-item .news-content .news-title a{
@@ -389,6 +400,7 @@ text-decoration: none;
 .most-popular-section .vertical-news-section .news-container .video-section .video-container .news-container .view-more-container .view-more-item .view-more-title a {
     color: black;
     text-decoration: none;
+    font-size: 16px;
 }
 .news-video-section{
     margin: 30px 0;
@@ -401,9 +413,10 @@ text-decoration: none;
     width: 10px;
     height: 30px;
 }
-.news-video-section .section-header .section-title .title{
+.news-video-section .section-header .section-title .title a{
     font-size: 18px;
     color: #fdfdfd;
+    text-decoration: none;
 }
 .news-video-section .section-body{
     background: #000000;
@@ -439,6 +452,7 @@ text-decoration: none;
 .news-video-section .section-body .news-container .news-item .news-title a {
     color: #ffffff;
     text-decoration: none;
+    font-weight: 400;
 }
 .one-car-per-week-section .section-body{
     padding: 30px 0;
@@ -564,6 +578,9 @@ text-decoration: none;
     justify-content: center;
     flex-direction: column;
     padding: 18px 17px;
+}
+.one-car-per-week-section .section-body .side-add-container .social-media-container .body a {
+    text-decoration: none;
 }
 .one-car-per-week-section .section-body .side-add-container .social-media-container .body .social-media-item{
     font-size: 18px;

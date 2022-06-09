@@ -185,6 +185,12 @@ img{
   border-left: 6px solid #cc171e;
 }
 
+.same-content--header .header-title a,
+.blog-news .blog-news--title a {
+  color: black;
+  text-decoration: none;
+}
+
 .same-content--header .header-filter .filter-form {
   display: flex;
 }
@@ -251,6 +257,7 @@ img{
 .same-content--list .list-item .list-item--title a {
   color: black;
   text-decoration: none;
+  font-weight: 350;
 }
 
 .same-content--list .list-item .list-item--thumbnail {
